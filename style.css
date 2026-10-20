@@ -1,0 +1,109 @@
+/* Reset padrão de margens e box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo / Moldura da Calculadora */
+.calculator {
+  width: 340px;
+  background-color: #1f2937;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Display / Tela da Calculadora */
+.display {
+  background-color: #111827;
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  min-height: 80px;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+/* Grade do Teclado de Botões */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Estilo Geral dos Botões */
+.btn {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    transform 0.05s ease;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Botões Numéricos */
+.btn-number {
+  background-color: #374151;
+  color: #ffffff;
+}
+
+.btn-number:hover {
+  background-color: #4b5563;
+}
+
+/* Botões de Ação (Clear / Backspace) */
+.btn-action {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.btn-action:hover {
+  background-color: #dc2626;
+}
+
+/* Botões de Operadores (÷, ×, −, +) */
+.btn-operator {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+.btn-operator:hover {
+  background-color: #d97706;
+}
+
+/* Botão de Igual (=) */
+.btn-equals {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.btn-equals:hover {
+  background-color: #059669;
+}
+
+/* Classe utilitária para botões duplos (AC e Zero) */
+.span-2 {
+  grid-column: span 2;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - The Odin Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <!-- Tela / Display -->
+        <div class="display" id="display">0</div>
+
+        <!-- Teclado de Botões -->
+        <div class="buttons">
+            <!-- Linha 1: Limpeza e Funções -->
+            <button id="clear" class="btn btn-action span-2">AC</button>
+            <button id="backspace" class="btn btn-action">DEL</button>
+            <button class="btn btn-operator" data-operator="/">÷</button>
+
+            <!-- Linha 2: Números e Multiplicação -->
+            <button class="btn btn-number" data-number="7">7</button>
+            <button class="btn btn-number" data-number="8">8</button>
+            <button class="btn btn-number" data-number="9">9</button>
+            <button class="btn btn-operator" data-operator="*">×</button>
+
+            <!-- Linha 3: Números e Subtração -->
+            <button class="btn btn-number" data-number="4">4</button>
+            <button class="btn btn-number" data-number="5">5</button>
+            <button class="btn btn-number" data-number="6">6</button>
+            <button class="btn btn-operator" data-operator="-">−</button>
+
+            <!-- Linha 4: Números e Adição -->
+            <button class="btn btn-number" data-number="1">1</button>
+            <button class="btn btn-number" data-number="2">2</button>
+            <button class="btn btn-number" data-number="3">3</button>
+            <button class="btn btn-operator" data-operator="+">+</button>
+
+            <!-- Linha 5: Zero, Ponto Decimal e Igual -->
+            <button class="btn btn-number span-2" data-number="0">0</button>
+            <button id="decimal" class="btn btn-number" data-number=".">.</button>
+            <button id="equals" class="btn btn-equals">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
