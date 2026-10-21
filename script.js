@@ -65,9 +65,10 @@ realizarConta.forEach((botao) => {
   botao.addEventListener("click", (e) => {
     segundoNumero = display.textContent;
 
-    if ((operador === "/" && segundoNumero === 0) {
+    if (operador === "÷" && segundoNumero === "0") {
+      display.textContent = "NULL";
+      return;
     }
-
     return (display.textContent = operate(
       Number(primeiroNumero),
       operador,
